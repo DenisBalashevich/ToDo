@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html ng-app="toDoApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/ToDoJS.js"></script>
+</head>
+
+<body ng-controller="toDoCtrl">
+    <div id="addToDo">
+        <p>
+            <input type="text" id="name" ng-model="name" placeholder="To-do name" />
+        </p>
+        <label for="content">Content:</label>
+        <p>
+            <input type="text" id="content" ng-model="content" name="text" placeholder="To-do content">
+        </p>
+        <label for="author">Author:</label>
+        <p>
+            <input type="text" id="author" ng-model="author" placeholder="author">
+            <button ng-click=addItem()>Add</button>
+        </p>
+    </div>
+
+</body>
+</html>
